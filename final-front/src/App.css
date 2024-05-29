@@ -1,0 +1,9 @@
+main {
+  width: 100vw;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color:black;
+  margin:30px auto;
+}

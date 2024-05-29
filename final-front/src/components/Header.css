@@ -1,0 +1,102 @@
+header {
+  height: 10vh;
+  width: 100vw;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleFatherContainer {
+  color: #000000;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.butonNav {
+  min-width: 130px;
+  height: 40px;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #ffd819;
+  background: #000000;
+  border-radius:50px;
+}
+
+.butonNav:hover {
+  background: #ffd819;
+  color: #000000;
+}
+
+.iconNav {
+  width: 30px;
+  filter: invert(100%);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-right: 20px;
+}
+
+.iconLogout {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: solid 4px black;
+  border-radius: 50%;
+}
+
+.profileCircle {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid #ffd819 4px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonDashboard, .buttonHome {
+  border: 2px solid #fe46c5;
+  background: #000000;
+}
+
+.buttonDashboard:hover, .buttonHome:hover {
+  background: #fe46c5;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    width: 100px;
+  }
+
+  .butonNav {
+    min-width: 100px;
+    height: 30px;
+    padding: 4px 8px;
+    font-size:0.7rem;
+  }
+
+  .iconNav, .iconLogout, .profileCircle {
+    width: 35px;
+    height: 35px;
+  }
+}
