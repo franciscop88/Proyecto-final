@@ -7,7 +7,7 @@ const User = require("../models/User.model");
 //! ---------------------------------------------------------------------
 
 const createProduct = async (req, res, next) => {
-  let catchImg = req.file?.path;
+  
   try {
     //! -----> ACTUALIZAR INDEXES
     await Product.syncIndexes();
@@ -22,12 +22,7 @@ const createProduct = async (req, res, next) => {
       tags: req.body.tags ? req.body.tags.split(',').map(tag => tag.trim()) : [],
     });
 
-    //! -------> VALORAR SI HEMOS RECIBIDO UNA IMAGEN O NO
-    if (req.file) {
-      newProduct.image = catchImg;
-    } else {
-      newProduct.image = "https://res.cloudinary.com/dhkbe6djz/image/upload/v1689099748/UserFTProyect/tntqqfidpsmcmqdhuevb.png";
-    }
+   
 
     try {
       //! ------------> VAMOS A GUARDAR LA INSTANCIA DEL NUEVO PRODUCT

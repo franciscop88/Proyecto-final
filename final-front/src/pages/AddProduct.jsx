@@ -98,7 +98,19 @@ export const CreateProduct = () => {
               Category
             </label>
           </div>
-          <Uploadfile />
+          <div className="upload_container form-group">
+            <input
+              className="input_product"
+              type="text"
+              id="image"
+              name="image"
+              autoComplete="false"
+              {...register('image', { required: true })}
+            />
+            <label htmlFor="image" className="custom-placeholder">
+              Product image URL
+            </label>
+          </div>
           <div className="btn_container">
             <button
               className="btn"

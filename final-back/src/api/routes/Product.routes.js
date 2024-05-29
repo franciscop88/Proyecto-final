@@ -14,7 +14,7 @@ const {
 
 const ProductRoutes = require("express").Router();
 
-ProductRoutes.post('/create', [isAuth], upload.single('image'), createProduct);
+ProductRoutes.post('/create', [isAuth], createProduct);
 ProductRoutes.get("/:id", getProductById);
 ProductRoutes.get("/", getAllProducts);
 ProductRoutes.get("/:userId/products", [isAuth], getAllProductsOfUser);
