@@ -16,7 +16,7 @@ const express = require("express");
 const UserRoutes = express.Router();
 
 //! ---------------- endPoints sin auth ---------------------------------------
-UserRoutes.post("/registerLargo", upload.single("image"), registerLargo);
+UserRoutes.post("/registerLargo", registerLargo);
 UserRoutes.post("/resend", resendCode);
 UserRoutes.post("/check", checkNewUser);
 UserRoutes.post("/login", login);
@@ -27,7 +27,7 @@ UserRoutes.delete("/", [isAuth], deleteUser);
 //! ---------------- endPoints con auth ---------------------------------------
 
 UserRoutes.patch("/changepassword", [isAuth], modifyPassword);
-UserRoutes.patch("/update/update", [isAuth], upload.single("image"), update);
+UserRoutes.patch("/update/update", [isAuth], update);
 
 /// ------------------> rutas que pueden ser redirect
 UserRoutes.patch("/sendPassword/:id", sendPassword);

@@ -5,7 +5,7 @@ import { APIuser } from "./serviceApiUse.config";
 //! ------------------------------- CREATE PRODUCT ------------------------
 export const createProduct = async (formData) => {
   return APIuser.post("/products/create", formData, {
-    headers: { "Content-Type": "multipart/form-data" },
+    headers: { "Content-Type": "application/json" },
   })
     .then((res) => res)
     .catch((error) => error);
@@ -58,7 +58,7 @@ export const productsByName = async (formData) => {
 export const updateProduct = async (productId, formData) => {
   return APIuser.patch(`/products/update/${productId}`, formData, {
     headers: {
-      "Content-Type": "multipart/form-data",
+      "Content-Type": "application/json",
       Authorization: `Bearer ${updateToken()}`,
     },
   })
