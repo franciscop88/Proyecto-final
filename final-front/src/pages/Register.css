@@ -54,36 +54,36 @@ a {
   border-radius: 5px;
   font-family: inherit;
   font-size: inherit;
-  caret-color: #ffd819;
-  border: solid 2px #ffd819;
+  caret-color: #26c45a;
+  border: solid 2px #26c45a;
 }
 
 .form-wrap .form-group input:focus {
-  outline-color: #ffd819;
+  outline-color: #26c45a;
 }
 
 .form-wrap .btn {
   width: 100%;
   padding: 10px;
   margin-top: 25px;
-  background: #ffd819;
+  background: #26c45a;
   color: #fff;
   cursor: pointer;
-  border: #ffd819 1px solid;
+  border: #26c45a 1px solid;
   border-radius: 5px;
   font-family: inherit;
   font-size: inherit;
 }
 
 .form-wrap .btn:hover {
-  background: #fe46c5;
+  background: #3d5dc9;
   color: #f4f4f4;
-  border: #fe46c5 1px solid;
+  border: #3d5dc9 1px solid;
 }
 
 .form-wrap .btn:focus {
-  outline-color: #fe46c5;
-  border: #fe46c5 1px solid;
+  outline-color: #3d5dc9;
+  border: #3d5dc9 1px solid;
 }
 
 .form-wrap .bottom-text {
@@ -105,7 +105,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fe46c5;
+  color: #3d5dc9;
 }
 
 .btn:disabled {
@@ -134,7 +134,7 @@ input[type="radio"] {
 }
 
 .label-radio {
-  background: #ffd819;
+  background: #26c45a;
   color: #000000;
   padding: 10px;
   text-align: center;
@@ -147,9 +147,9 @@ input[type="radio"]:checked + .label-radio {
 }
 
 a {
-  color: #fe46c5;
+  color: #3d5dc9;
 }
 
 .anchorCustom {
-  color: #fe46c5;
+  color: #3d5dc9;
 }

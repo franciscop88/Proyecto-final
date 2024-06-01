@@ -30,13 +30,13 @@ header {
   position: relative;
   display: inline-block;
   outline: none;
-  border: 2px solid #ffd819;
+  border: 2px solid #26c45a;
   background: #000000;
   border-radius:50px;
 }
 
 .butonNav:hover {
-  background: #ffd819;
+  background: #26c45a;
   color: #000000;
 }
 
@@ -64,7 +64,7 @@ nav {
   height: 40px;
   object-fit: cover;
   border-radius: 50%;
-  border: solid #ffd819 4px;
+  border: solid #26c45a 4px;
 }
 
 a {
@@ -74,12 +74,12 @@ a {
 }
 
 .buttonDashboard, .buttonHome {
-  border: 2px solid #fe46c5;
+  border: 2px solid #3d5dc9;
   background: #000000;
 }
 
 .buttonDashboard:hover, .buttonHome:hover {
-  background: #fe46c5;
+  background: #3d5dc9;
   color: white;
 }
 
