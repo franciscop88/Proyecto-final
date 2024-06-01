@@ -9,7 +9,7 @@ export const Header = () => {
       <header>
         <div className="titleFatherContainer">
           <img
-            src="https://res.cloudinary.com/deahoouj6/image/upload/v1714061772/logoReBee_ebnpms.png"
+            src="https://placehold.co/712x290/000000/FFFFFF/png?text=TipoAmazon"
             alt="logo"
             className="logo"
           />

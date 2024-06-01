@@ -31,7 +31,7 @@ export const useUpdateError = (res, setRes, setUser, logout, userlogin) => {
         name: res?.data?.updateUser?.name,
         image: res?.data?.updateUser?.image,
       };
-
+      setUser(customUser)
       const stringUser = JSON.stringify(customUser);
       // llamamos a la funcion de login para resetear que el check esta a true
       userlogin(stringUser);
@@ -63,8 +63,8 @@ export const useUpdateError = (res, setRes, setUser, logout, userlogin) => {
     if (res?.status == 200) {
       setRes(() => ({}));
       return Swal.fire({
-        icon: "error",
-        title: `Error update data user ❌`,
+        icon: "Succes",
+        title: `Cambio confirmado ✅`,
         showConfirmButton: false,
         timer: 1500,
       });
